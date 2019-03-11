@@ -1,7 +1,7 @@
-<!DOCTYPE HTML> 
+<!DOCTYPE HTML>
 
-<head> 
-    <title>Hangman Game</title> 
+<head>
+    <title>Hangman Game</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
     <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <script src="jquery.js"></script>
@@ -11,11 +11,17 @@
 <body>
     <div id="topbar">Hangman Game</div>
     <div class="spacer"></div>
-    <div id="gameContent"> 
-    <div id="words">
-
-    </div>
-
+    <div id="gameContent">
+        <div id="words">
+        </div>
+        <div id="guesses">Previous guesses
+        </div>
+        <div id="hint"></div>
+        <div id="picHolder">
+            <img id="hangman" src="hang.png" style="left: -150px;">
+        </div>
+        <div id="feedback">
+        </div>
     </div>
 </body>
 
