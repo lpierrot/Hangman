@@ -1,1 +1,1 @@
-# Hangman
+# Image Slider
