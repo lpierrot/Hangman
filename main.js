@@ -1,26 +1,21 @@
-const nextBtn = document.querySelector('.nextBtn');
-const prevBtn = document.querySelector('.prevBtn');
-const container = document.querySelector('.images');
+document.addEventListener("DOMContentLoaded", function(event) {
+    const nextBtn = document.querySelector('.nextBtn');
+    const prevBtn = document.querySelector('.prevBtn');
+    const container = document.querySelector('.images');
 
-let counter = 0;
+    let imagePath = `images/bcg-0.jpeg`;
+    let imageAlt = 'food';
+    let imageEl = document.createElement('img');
+    imageEl.setAttribute("src", imagePath);
+    imageEl.setAttribute("alt", imageAlt);
+    container.appendChild(imageEl);
+    
 
-nextBtn.addEventListener('click',NextSlide);
-prevBtn.addEventListener('click',prevSlide);
+    
+    
+    
 
-function nextSlide(){
-    container.animate([{opacity:'0.1'},{opacity:'1.0'}],{duration:1000, fill:'forwards'});
-    if(counter ===4){
-        counter = -1;
-    }
-    counter++;
-    container.style.backgroundImage = `url(images/bcg-.${counter}.jpeg)`
-}
+    nextBtn.addEventListener('click', NextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+});
 
-function prevSlide() {
-    container.animate([{ opacity: '0.1' }, { opacity: '1.0' }], { duration: 1000, fill: 'forwards' });
-    if (counter === 0) {
-        counter = 5;
-    }
-    counter--;
-    container.style.backgroundImage = `url(img/pic.${counter}.jpg)`
-}
