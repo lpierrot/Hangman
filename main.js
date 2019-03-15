@@ -11,10 +11,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     container.appendChild(imageEl);
     
 
-    
-    
-    
-
     nextBtn.addEventListener('click', NextSlide);
     prevBtn.addEventListener('click', prevSlide);
 });
