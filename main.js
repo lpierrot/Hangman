@@ -1,10 +1,11 @@
 //Event content loaded. Waiting for content to load before making the querySelctor call
-document.addEventListener("DOMContentLoaded", function (event) { 
+document.addEventListener("DOMContentLoaded", function (event) {
     //Search for elemensts
     const nextBtn = document.querySelector('.nextBtn');
     const prevBtn = document.querySelector('.prevBtn');
     const container = document.querySelector('.images');
     const footer = document.querySelector('.footer');
+    const imagePaths = ['images/bcg-0.jpeg', 'images/bcg-1.jpeg', 'images/bcg-2.jpeg', 'images/bcg-3.jpeg', 'images/bcg-4.jpeg']
 
     //Object for picture description
     const description = {
@@ -15,17 +16,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
         4: "Now that's a healthy breakfast",
     };
 
-    //String for images path
-    const imagePathBegin = 'images/bcg-';
-    const imagePathEnd = '.jpeg';
     let currentImage = 0;
     footer.textContent = description[0];
-    
+
     let imageAlt = 'food';
     let imageEl = document.createElement('img');
 
     //set initial images
-    imageEl.setAttribute("src", imagePathBegin + currentImage + imagePathEnd);
+    imageEl.setAttribute("src", imagePaths[currentImage]);
     imageEl.setAttribute("alt", imageAlt);
     container.appendChild(imageEl);
 
@@ -36,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             currentImage = 0;
         }
         footer.textContent = description[currentImage];
-        imageEl.setAttribute("src", imagePathBegin + currentImage + imagePathEnd);
+        imageEl.setAttribute("src", imagePaths[currentImage]);
     }
 
     //Function to handle previous click
@@ -46,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             currentImage = 4;
         }
         footer.textContent = description[currentImage];
-        imageEl.setAttribute("src", imagePathBegin + currentImage + imagePathEnd);
+        imageEl.setAttribute("src", imagePaths[currentImage]);
     }
 
 
