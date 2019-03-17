@@ -8,7 +8,7 @@ body {
 
 .images img {
     background: rgba(225, 235, 232, 0.699);
-    flex: 0 0 80%;  
+    flex: 0 0 80%;
     min-height: 70vh;
     border-radius: 15px;
     box-shadow: 5px 10 px black;
@@ -33,14 +33,14 @@ body {
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .nextBtn {
     position: absolute;
     top: 50%;
     right: 0;
-    transform: translate(50%,-50%);
+    transform: translate(50%, -50%);
 }
 
 .btn:active {
@@ -50,5 +50,13 @@ body {
 
 .btn:hover {
     background: gray;
+    color: white;
+}
+
+.footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
     color: white;
 }
