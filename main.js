@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         0: "This is my favorite desert",
         1: "Hmmmm Coffee is my best friend",
         2: "And voila that's Cappucino and lemon",
-        3: "Fruits, coffee, and break???",
+        3: "Fruits, coffee, and break!",
         4: "Now that's a healthy breakfast",
     };
 
