@@ -29,6 +29,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     //Function to handle next click
     const nextSlide = (e) => {
+        container.animate([{
+            opacity: '0.1'
+        }, {
+            opacity: '1.0'
+        }], {
+            duration: 1000,
+            fill: 'forwards'
+        });
         currentImage += 1;
         if (currentImage > 4) {
             currentImage = 0;
@@ -39,6 +47,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     //Function to handle previous click
     const prevSlide = (e) => {
+        container.animate([{
+            opacity: '0.1'
+        }, {
+            opacity: '1.0'
+        }], {
+            duration: 1000,
+            fill: 'forwards'
+        });
         currentImage -= 1;
         if (currentImage < 0) {
             currentImage = 4;

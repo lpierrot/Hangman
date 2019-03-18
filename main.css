@@ -7,7 +7,6 @@ body {
 }
 
 .images img {
-    background: rgba(225, 235, 232, 0.699);
     flex: 0 0 80%;
     min-height: 70vh;
     border-radius: 15px;
